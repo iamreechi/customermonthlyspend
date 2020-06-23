@@ -6,22 +6,79 @@
   <title>ML API</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:50' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:50' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{('css/style.css') }}">
   
 </head>
 
 <body>
  <div class="login">
-	<h1>Predict Salary Analysis</h1>
+  <h1>Predict Customer's Monthly Spend</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="experience" placeholder="Experience" required="required" />
-        <input type="text" name="test_score" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+      <label for="CountryRegionName">Country</label> 
+      <select id="CountryRegionName" name="CountryRegionName">
+        <option value="1">Australia</option> 
+        <option value="2">United States</option>
+        <option value="3">United Kingdom</option> 
+        <option value="4">Germany</option> 
+        <option value="5">France</option>  
+      </select>
+      <br> 
+      <label for="Education">Education</label> 
+      <select id="Education" name="Education"> 
+        <option value="1">Bachelors</option> 
+        <option value="2">Partial College</option> 
+        <option value="3">High School</option> 
+        <option value="4">Partial High School</option> 
+        <option value="5">Graduate Degree</option> 
+      </select> 
+      <br> 
+      <label for="Occupation">Occupation</label> 
+      <select id="Occupation" name="Occupation"> 
+        <option value="1">Clerical</option> 
+        <option value="2">Skilled Manual</option> 
+        <option value="3">Professional</option> 
+        <option value="4">Manual</option> 
+        <option value="5">Management</option> 
+      </select> 
+      <br> 
+      <label for="Gender">Gender</label> 
+      <select id="Gender" name="Gender"> 
+        <option value="1">Female</option> 
+        <option value="2">Male</option>  
+      </select> 
+      <br> 
+      <label for="MaritalStatus">MaritalStatus</label> 
+      <select id="MaritalStatus" name="MaritalStatus"> 
+        <option value="1">Single</option> 
+        <option value="2">Married</option>  
+      </select> 
+      <br> 
+      <label for="HomeOwnerFlag">HomeOwnerFlag</label> 
+      <select id="HomeOwnerFlag" name="HomeOwnerFlag"> 
+        <option value="0">No</option> 
+        <option value="1">Yes</option>  
+      </select> 
+      <br> 
+      <input type="text" name="NumberCarsOwned" placeholder="NumberCarsOwned" required="required" /> 
+      <br> 
+      <input type="text" name="NumberChildrenAtHome" placeholder="NumberChildrenAtHome" required="required" /> 
+      <br> 
+      <input type="text" name="YearlyIncome" placeholder="YearlyIncome" required="required" /> 
+      <br> 
+      <label for="BikeBuyer">Have you bought a Bike</label> 
+      <select id="BikeBuyer" name="BikeBuyer"> 
+        <option value="0">No</option> 
+        <option value="1">Yes</option>  
+      </select> 
+      <br> 
+    <input type="text" name="Year_of_Birth" placeholder="Year_of_Birth" required="required" /> 
+      <br> 
 
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
    <br>
@@ -33,3 +90,4 @@
 
 </body>
 </html>
+
