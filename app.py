@@ -20,7 +20,7 @@ def predict():
 
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text='Customer Average Monthly Spend should be N {}'.format(output))
+    return render_template('index.html', prediction_text='Customer Average Monthly Spending should be $ {}'.format(output))
 
 if __name__ == "__main__":
     app.run(debug=True)
