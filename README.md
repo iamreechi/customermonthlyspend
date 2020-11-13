@@ -1,1 +1,1 @@
-# THis is an Heroku Demo using Flask 
+This is a simple web App that Predict Customer Monthly spending using Machine Learning for its decision engine. However,  the model was built with less customer features but the key element of this project is to see the possibility of predicting customer spending for a monthly bases or thereabout. The RMSE was $3.1 .
