@@ -1,5 +1,6 @@
 
 **Business Problem**
+
 Predicting Customer's average monthly spend from demographic features, Income Buying behaviour on a Bike ETC
 
 This data is about a company's customers, including demographic features and information about purchases they have made. The company is particularly interested in analyzing customer data to determine any apparent relationships between demographic features known about the customers and the purchase behaviour.
